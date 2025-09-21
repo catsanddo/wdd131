@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap');
+
+.content {
+	max-width: 600px;
+	margin: auto;
+	margin-top: 50px;
+
+	padding-top: 20px;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 50px;
+
+	font-size: 20px;
+	font-family: "Times New Roman", serif;
+
+	border-width: 1px;
+	border-color: grey;
+	border-style: solid;
+}
+
+.content * {
+	max-width: 600px;
+}
+
+header {
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 2em;
+	font-family: "STIX Two Text", "Times New Roman", serif;
+}
+
+header h1 {
+	margin-top: 80px;
+	letter-spacing: 4px;
+}
+
+header h2 {
+	color: #006EB6;
+	text-decoration: underline;
+	text-decoration-color: lightgrey;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 6px;
+	font-size: 0.8em;
+	letter-spacing: 1px;	
+}
+
+main {
+	margin: 2em auto;
+	line-height: 1.5em;
+}
+
+main li {
+	margin: 1em auto;
+}
+
+footer {
+	width: 50%;
+	margin: auto;
+	align-content: center;
+}
+
+img {
+	width: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
