@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<meta name="description" content="A recpie book website.">
+ 	<meta name="author" content="Travis Scoville">
+
+ 	<meta property="og:title" content="Recipe Book">
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="Search for recipes">
+	<meta property="og:image" content="https://catsanddo.github.io/wdd131/recipes/images/apple-crisp.jpg">
+	<meta property="og:url" content="https://catsanddo.github.io/wdd131/recipes/">
+	<meta name="twitter:card" content="summary_large_image">
+
+ 	<link rel="stylesheet" type="text/css" href="recipes.css">
+	<title>Recipe Book</title>
+</head>
+<body>
+	<header>
+		<img src="images/recipe-book.png">
+		<h1>RecipeBook</h1>
+	</header>
+	<main>
+		<div class="search-bar">
+			<input type="text" placeholder="Find a recipe">
+			<img src="images/search.svg">			
+		</div>
+
+		<hr>
+
+		<section class="recipe">
+			<img src="./images/chicken-curry.webp">
+			<div>
+				<div class="tags">
+					<span class="tag">chicken</span> 
+					<span class="tag">entree</span> 
+					<span class="tag">Indian</span>
+				</div>
+				<h1 class="dish-name">Chicken Curry</h1>
+				<p class="description">Quick and easy Chicken curry recipe made with easy to find ingredients.</p>
+				<br>
+				<span
+					class="rating"
+					role="img"
+					aria-label="Rating: 5 out of 5 stars"
+				>
+					<span aria-hidden="true" class="icon-star">⭐</span>
+					<span aria-hidden="true" class="icon-star">⭐</span>
+					<span aria-hidden="true" class="icon-star">⭐</span>
+					<span aria-hidden="true" class="icon-star-empty">⭐</span>
+					<span aria-hidden="true" class="icon-star-empty">⭐</span>
+				</span>				
+			</div>
+		</section>
+	</main>
+	<footer>
+		<a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+		<div class="social">
+			<!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+			<a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+			<a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+			<a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+		</div>
+	</footer>
+</body>
+</html>
