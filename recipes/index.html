@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,24 +13,26 @@
 	<meta property="og:url" content="https://catsanddo.github.io/wdd131/recipes/">
 	<meta name="twitter:card" content="summary_large_image">
 
+	<link rel="icon" type="image/png" href="favicon.png">
  	<link rel="stylesheet" type="text/css" href="recipes.css">
+ 	<link rel="preload" as="image" href="./recipes/chicken-curry.webp" fetchpriority="high">
 	<title>Recipe Book</title>
 </head>
 <body>
 	<header>
-		<img src="images/recipe-book.png">
+		<img src="images/recipe-book.png" alt="cookbook">
 		<h1>RecipeBook</h1>
 	</header>
 	<main>
 		<div class="search-bar">
 			<input type="text" placeholder="Find a recipe">
-			<img src="images/search.svg">			
+			<img src="images/search.svg" alt="search icon">			
 		</div>
 
 		<hr>
 
 		<section class="recipe">
-			<img src="./images/chicken-curry.webp">
+			<img src="./images/chicken-curry.webp" alt="chicken curry">
 			<div>
 				<div class="tags">
 					<span class="tag">chicken</span> 

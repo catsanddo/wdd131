@@ -1,0 +1,23 @@
+.card-container {
+	display: grid;
+
+	grid-template-columns: repeat(10, 1fr);
+}
+
+.card-front, .card-back {
+	width: 450px;
+	height: 300px;
+}
+
+.card-front {
+	background-color: gray;
+	grid-column: 1 / 8;
+	grid-row: 1 / 5;
+	z-index: 1;
+}
+
+.card-back {
+	background-color: green;
+	grid-column: 3 / 10;
+	grid-row: 2 / 6;
+}

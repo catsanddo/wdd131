@@ -146,7 +146,8 @@ footer div img {
 }
 
 footer a {
-	font-size: 0.6em;
+	font-size: 0.8em;
+	color: #04669f; /* For better constrast */
 	text-decoration: none;
 	color: var(--primary-color);
 }
