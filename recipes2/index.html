@@ -15,10 +15,9 @@
 
 	<link rel="icon" type="image/png" href="favicon.png">
  	<link rel="stylesheet" type="text/css" href="recipes.css">
- 	<link rel="preload" as="image" href="./recipes/chicken-curry.webp" fetchpriority="high">
 	<title>Recipe Book</title>
 
-	<script src="main.js" defer></script>
+	<script src="main.js" type="module"></script>
 </head>
 <body>
 	<header>
@@ -27,35 +26,14 @@
 	</header>
 	<main>
 		<div class="search-bar">
-			<input type="text" placeholder="Find a recipe">
-			<img src="images/search.svg" alt="search icon">			
+			<input id="search-input" type="text" placeholder="Find a recipe">
+			<button id="search-button"><img src="images/search.svg" alt="search icon"></button>
 		</div>
 
 		<hr>
 
-		<section class="recipe">
-			<img src="./images/chicken-curry.webp" alt="chicken curry">
-			<div>
-				<div class="tags">
-					<span class="tag">chicken</span> 
-					<span class="tag">entree</span> 
-					<span class="tag">Indian</span>
-				</div>
-				<h1 class="dish-name">Chicken Curry</h1>
-				<p class="description">Quick and easy Chicken curry recipe made with easy to find ingredients.</p>
-				<br>
-				<span
-					class="rating"
-					role="img"
-					aria-label="Rating: 5 out of 5 stars"
-				>
-					<span aria-hidden="true" class="icon-star">⭐</span>
-					<span aria-hidden="true" class="icon-star">⭐</span>
-					<span aria-hidden="true" class="icon-star">⭐</span>
-					<span aria-hidden="true" class="icon-star-empty">⭐</span>
-					<span aria-hidden="true" class="icon-star-empty">⭐</span>
-				</span>				
-			</div>
+		<section id="recipes-container">
+			
 		</section>
 	</main>
 	<footer>

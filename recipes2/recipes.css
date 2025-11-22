@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+:root {
+	--primary-color: #1B98E0;
+	--secondary-color: #59c3c3;
+	--text-dark: #333;
+	--text-light: #ebebeb;
+	--primary-font: Arial, Helvetica,sans-serif;
+	--secondary-font: "Handlee";
+}
+
+* {
+	font-family: inherit;
+	font-size: inherit;	
+	color: inherit;
+
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: var(--primary-font);
+	font-size: 16px;
+	color: var(--text-dark);
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+header {
+	display: flex;
+	align-items: baseline;
+	max-width: 80%;
+	width: fit-content;
+	margin: auto;
+	margin-top: 2rem;
+	margin-bottom: 2.5rem;
+	font-size: 2.25em;
+}
+
+header h1 {
+	font-family: var(--secondary-font), cursive, sans-serif;
+}
+
+header img {
+	height: 1.5em;
+}
+
+main {
+	flex-grow: 1;
+}
+
+.search-bar {
+  display: flex;
+  max-width: 90%;
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 1em;
+}
+
+.search-bar input {
+  flex: 1 1 auto;
+  min-width: 0;
+  border: none;
+  /*font-size: 1.25em;*/
+  padding: 0.5em 0.2em;
+}
+
+.search-bar input:focus {
+	outline: none;
+}
+
+.search-bar button {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.search-bar img {
+  max-height: 2em;
+  box-sizing: border-box;
+  padding: 0.25em;
+  border-left: 2px solid black;
+}
+
+.recipe {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+
+	font-weight: 600;
+
+	margin: 1em;
+	padding: 1em;
+	padding-bottom: 2em;
+	border: solid 1px black;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.recipe .tags {
+	margin: 0.5em 0;
+}
+
+.recipe .tag {
+	border: solid 1px black;
+	padding: 0.25em;
+}
+
+.recipe .dish-name {
+	font-family: var(--secondary-font);
+	color: var(--primary-color);
+	font-size: 1.5em;
+	margin: 0.75em 0;
+}
+
+.recipe .description {
+	display: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+footer {
+	display: flex;
+	flex-direction: column-reverse;
+	text-align: center;
+
+	width: 95%;
+	margin: auto;
+	padding: 0.5em;
+}
+
+footer div {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 0.5em;
+	gap: 0.5em;
+}
+
+footer div img {
+	min-width: 4em
+}
+
+footer a {
+	font-size: 0.8em;
+	color: #04669f; /* For better constrast */
+	text-decoration: none;
+	color: var(--primary-color);
+}
+
+@media screen and (min-width: 650px) {
+	.recipe {
+		flex-direction: row;
+	}
+
+	.recipe img {
+		max-width: 40vw;
+	}
+
+	.recipe .description {
+		display: block;
+	}
+
+	footer {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
